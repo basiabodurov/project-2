@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- RED Academy Project 2 Basia Bodurov October 5, 2015 -->
+
+<html>
+
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>100 Mile Resto Bar</title>
+
+	    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="js/slider/jquery.bxslider.css">
+			<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
+  		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	 </head>
+
+ 		<body>
+
+			<header>
+
+				<section class="header clearfix">
+
+					<ul class="navigation">
+			            <li><a href="#about">about</a></li>
+			            <li><a href="#menu">menu</a></li>
+			            <li><a href="#reservations">reservations</a></li>
+			            <li><a href="#contact">contact</a></li>
+			         </ul>
+			         <img class="logo" src="images/100-mile-logo-long.svg" alt="100 Mile Resto Bar Logo" />
+			         <ul class="slogan">
+			         	<li>Grown here.</li>
+			         	<li>Made here.</li>
+			         	<li>Eaten here.</li>
+			         </ul>
+			         <button type="button">See our menu ></button>
+
+			         <div class="hello">
+			         	<p>It's <span id="day">
+			         	</span>,</p><p class="uppercase">We are <span id="status"></span>!</p>
+			         </div>
+
+				</section>
+
+			</header>
+
+		 	<section id="about">
+
+		 		<h1>local flavours</h1>
+		 		<p>Our menu is fresh, delicious, and locally sourced. We fuse flavour, seasonal and local ingredients with inspiration from out local neighbourhood.</p>
+
+		 	</section>
+
+			 	<ul class="bxslider">
+	  			<li><img src="images/slider_images/bread-stone.jpg" alt="Bread"/></li>
+	  			<li><img src="images/slider_images/dish.jpg" alt="Dish"/></li>
+	  			<li><img src="images/slider_images/herbs.jpg" alt="Herbs"/></li>
+	  			<li><img src="images/slider_images/juice.jpg" alt="Juice"/></li>
+	  			<li><img src="images/slider_images/knives-forks.jpg" alt="Knives and forks"/></li>
+	  			<li><img src="images/slider_images/sweet-cakes.jpg" alt="Sweet cakes"/></li>
+				</ul>
+
+		 	<section id="menu">
+
+		 		<h1>food &amp; drink</h1>
+
+		 		<div class="menu-items">
+		 			<h2>Forks</h2>
+		 			<p>Foraged Fried Green Tomato - $10</p>
+					<p>Braised Blackberry Poutine - $12</p>
+					<p>Pickled Kale Salad - $15</p>
+					<p>Gnocchi on a Rock - $23</p>
+				</div>
+
+				<div class="menu-items">
+		 			<h2>Knives</h2>
+		 			<p>Truffled Bacon - $10</p>
+					<p>Pickled Deer with Saffron - $12</p>
+					<p>Braised Boar &amp; Waffles - $15</p>
+					<p>Organic Salted Pasta - $16</p>
+					<p>Free Range Pork Belly - $23</p>
+				</div>
+
+				<div class="menu-items">
+		 			<h2>Glasses</h2>
+					<p>Artisnal Water - $4</p>
+					<p>Hand-Pressed Fruit-Juice - $5</p>
+					<p>Craft Beer - $5 glass / $7 pint</p>
+					<p>Organic House Red or White - $10</p>
+				</div>
+
+		 	</section>
+
+		 	<section id="reservations">
+				<div class="reservation-bg">
+		 			<h1 class="book-table">book a table</h1>
+		 			<p>If you would like to book a table at 100 Mile Resto Bar for up to 8 people, please use our booking form below. We will send you confirmation as soon as we can.</p>
+
+		 			<form>
+		 				<div class="formcol">
+		  				Which date?<br>
+		  				<input id="date" type="text" name="date">
+		  			<br>
+		  				What time?<br>
+		  				<input id="time" type="text" name="time">
+		  			<br></div>
+		  				<div class="formcol">
+		  				No. of people?<br>
+		  				<input type="number" name="number-of-people">
+		  			<br>
+		  				Your name<br>
+		  				<input type="text" name="name">
+		  			<br></div>
+		  				<div class="formcol">
+		  				Phone<br>
+		  				<input type="number" name="phone-number">
+		  			<br>
+		  				email<br>
+		  				<input type="email" name="email-address">
+		  			<br></div>
+		  				<button name="submit">
+		  				Book Now >
+						</button>
+					</form>
+				</div>
+		 	</section>
+
+		 	<section id="contact">
+
+		 		<h1>Find us:</h1>
+
+				<div class="restaurant-address">
+					<a target="_blank" href="https://www.google.com/maps/place/1490+W+Broadway,+Vancouver,+BC+V6H,+Canada/@49.2634483,-123.1381683,17z/data=!3m1!4b1!4m2!3m1!1s0x548673c79e1ac457:0x3aea6428fa30dc6a"><i class="fa fa-map-marker"></i></a><br>
+					<a target="_blank" href="https://www.google.com/maps/place/1490+W+Broadway,+Vancouver,+BC+V6H,+Canada/@49.2634483,-123.1381683,17z/data=!3m1!4b1!4m2!3m1!1s0x548673c79e1ac457:0x3aea6428fa30dc6a">1490 W Broadway, Vancouver BC</a>
+				</div>
+
+				<div class="restaurant-phone">
+					<a href="tel:604-604-6040"><i class="fa fa-phone"></i></a><br>
+					<a href="tel:604-604-6040">604-604-6040</a>
+				</div>
+
+				<div class="restaurant-email">
+					<a href="mailto:info@hundredmilerestobar.com"><i class="fa fa-envelope"></i></a><br>
+					<a href="mailto:info@hundredmilerestobar.com">info@hundredmilerestobar.com</a>
+				</div>
+
+		 	</section>
+
+		 <footer>
+		 	<div class="clearfix">
+		 		<img class="logo-stacked" src="images/100-mile-logo-stacked.svg" alt="100 Mile Resto Bar Logo Stacked" />
+
+		 		<div class="social-icons">
+		 			<p>Follow us on:</p>
+		 			<i class="fa fa-facebook-square"></i>
+		 			<i class="fa fa-twitter-square"></i>
+		 			<i class="fa fa-instagram"></i>
+		 			<p class="copywrite">&copy; 100 Mile Resto Bar 2015</p>
+		 		</div>
+		 	</div>
+
+		 </footer>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	  <script type="text/javascript" src="js/slider/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.timepicker.min.js"></script>
+	 </body>
+
+ </html>

@@ -1,0 +1,567 @@
+/* RED Academy Project 2 Basia Bodurov October 5, 2015 */
+
+
+/* Fonts */
+/*-----------------------------------------*/
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('../fonts/merriweather-regular-webfont.eot');
+    src: url('../fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-regular-webfont.woff') format('woff'),
+         url('../fonts/merriweather-regular-webfont.ttf') format('truetype'),
+         url('../fonts/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('../fonts/opensans-extrabold-webfont.eot');
+    src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+         url('../fonts/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+}
+
+
+/* Extra Resetting */
+/*-----------------------------------------*/
+
+* {
+   box-sizing: border-box;
+}
+
+
+/* Mobile first CSS */
+
+
+/* Global */
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------
+Colours:
+orange brand colour #f89603
+brown brand colour #483118
+light tan brand colour #e7e3c5
+-----------------------------------------*/
+
+html {
+	color: #292929;
+    font-size: 18px;
+    text-align: center;
+	}
+
+body {
+	font-family: 'merriweather', Georgia, serif;
+	line-height: 1.5;
+	background: #f3f3f3;
+	margin: 0 auto;
+}
+
+h1,h2,h3 {
+	font-family: 'open_sans', Verdana, sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 8%;
+	margin-bottom: 5%;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+p {
+	font-size: 0.7rem;
+}
+
+header {
+	background: url('../images/rustic-masthead.jpg');
+	background-size: cover;
+}
+
+a {
+	color: #f3f3f3;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #f89603;
+}
+
+button {
+	width: 40%;
+	height: 30px;
+	margin-bottom: 10%;
+	background-color: #f89603;
+    color: #f3f3f3;
+    font-family: 'open_sans', Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px 7px #292929;
+}
+
+button:hover {
+    border: none;
+    background: #483118;
+}
+
+form {
+	color: #f3f3f3;
+	font-family: 'open_sans', Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+input {
+width: 90%;
+margin-bottom: 3%;
+font-size: 0.9rem;
+border: 1px solid #f89603;
+}
+
+form button {
+	margin-top: 5%;
+	margin-left: 25%;
+	width: 43%;
+}
+
+#contact a {
+	color: black;
+	font-size: 0.7rem;
+}
+
+footer {
+background-color: #483118;
+padding-top: 10%;
+padding-bottom: 13%;
+}
+
+
+/* Layout */
+/*-----------------------------------------*/
+
+.navigation li {
+	font-size: 0.6rem;
+	font-family: 'open_sans', Verdana, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px #292929;
+	display: inline;
+	margin: 3% 3% 3% 2%;
+}
+
+.logo {
+	width: 80%;
+   	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.slogan {
+	font-family: 'open_sans', Verdana, sans-serif;
+	color: #f3f3f3;
+	font-size: 0.7rem;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+.hello {
+	font-family: 'open_sans', Verdana, sans-serif;
+	color: #f3f3f3;
+	background-color: rgba(72, 49, 24, 0.7);
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.hello p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+#about {
+	padding-bottom: 7%;
+}
+
+
+/* Slider */
+
+.bx-viewport, .bx-wrapper{
+    position:relative;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.bxslider li{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.bx-wrapper .bx-viewport{
+    border: none !important;
+}
+
+
+/* Reservation Form */
+.reservation-bg {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#reservations {
+	background: url('../images/tables.jpg');
+	background-size: cover;
+	min-width: 300px;
+}
+
+#reservations h1 {
+	color: #f3f3f3;
+	text-shadow: 1px 1px 2px #292929;
+	padding-top: 7%;
+}
+
+#reservations p {
+	color: #f3f3f3;
+	text-shadow: 1px 1px 2px #292929;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+
+/* Contact */
+
+#contact {
+	padding-bottom: 10%;
+}
+
+.fa.fa-map-marker {
+	color: #d8c8a1;
+	font-size: 2rem;
+}
+
+.fa.fa-phone {
+	color: #d8c8a1;
+	font-size: 1.5rem;
+	margin-top: 5%;
+}
+
+.fa.fa-envelope {
+	color: #d8c8a1;
+	font-size: 1.2rem;
+	margin-top: 5%;
+}
+
+
+
+/* Footer */
+
+.logo-stacked {
+	width: 30%;
+	float: left;
+	margin-left: 6%;
+}
+
+.social-icons {
+	float: right;
+	color: #f3f3f3;
+	text-align: right;
+	margin-right: 6%;
+}
+
+.social-icons p {
+	font-family: 'open_sans', Verdana, sans-serif;
+	font-size: 0.6rem;
+}
+
+.social-icons .fa {
+	font-size: 1.2rem;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.fa:hover {
+    color: #f89603;
+}
+
+.social-icons .copywrite {
+	font-size: 0.5rem;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Media queries */
+/*-----------------------------------------*/
+
+/* Tablet */
+
+@media all and (min-width: 768px) {
+
+header {
+	padding-top: 2%;
+}
+
+.navigation {
+	font-size: 0.9rem;
+	text-align: right;
+	width: 50%;
+	margin-left: 45%;
+}
+
+.logo {
+	display: inline-block;
+	width: 53%;
+   	height: auto;
+    margin-bottom: 0;
+    margin-top: 5%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.slogan {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+button {
+	width: 18%;
+	height: 30px;
+	margin-bottom: 10%;
+	background-color: #f89603;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+.hello {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.menu-items {
+	display: inline-block;
+	margin: 2%;
+	vertical-align: top;
+	line-height: 2;
+}
+
+#reservations {
+	max-height: 400px;
+	background-size: cover;
+}
+
+input {
+	max-width: 90%;
+}
+
+.formcol {
+	display: inline-block;
+	margin: 1%;
+}
+
+.reservation-bg {
+	margin-right: 3%;
+	margin-left: 3%;
+	max-height: 400px;
+	}
+
+form button {
+	width: 20%;
+	margin-left: 32%;
+	margin-top: 3%;
+}
+
+div.restaurant-address {
+	width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.restaurant-phone {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.restaurant-email {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contact {
+	padding-bottom: 7%;
+}
+
+.logo-stacked {
+	width: 15%;
+}
+
+footer {
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+}
+
+/* Desktop */
+
+@media all and (min-width: 1280px) {
+
+.navigation li {
+	text-align: right;
+	width: 50%;
+	margin-left: 2%;
+	font-size: 0.9rem;
+}
+
+.logo {
+	width: 30%;
+}
+
+.slogan {
+	font-size: 0.8rem;
+}
+
+button {
+	width: 12%;
+	margin-bottom: 5%;
+}
+
+#about h1 {
+	font-size: 1.4rem;
+}
+
+#about p {
+	font-size: 0.8rem;
+}
+
+#menu h1 {
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+#reservations {
+	max-height: 500px;
+	background-size: cover;
+}
+
+#reservations h1 {
+	padding-top: 3%;
+}
+
+input {
+	max-width: 120%;
+}
+
+form {
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.formcol {
+	display: inline-block;
+	margin-right: 7%;
+	margin-left: 7%;
+}
+
+.book-table {
+	font-size: 1.4rem;
+}
+
+#reservations p {
+	font-size: 0.9rem;
+}
+
+.reservation-bg {
+	margin-right: 3%;
+	margin-left: 3%;
+	max-height: 500px;
+	}
+
+form button {
+	width: 13%;
+	margin-left: 41%;
+	margin-top: 3%;
+}
+
+#contact h1 {
+	font-size: 1.4rem;
+}
+
+div.restaurant-address {
+	width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5%;
+}
+
+div.restaurant-phone {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5%;
+}
+
+div.restaurant-email {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.logo-stacked {
+	width: 11%;
+}
+
+footer {
+padding-top: 3%;
+padding-bottom: 3%;
+}
+
+}
